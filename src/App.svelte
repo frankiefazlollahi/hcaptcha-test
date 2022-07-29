@@ -1,7 +1,6 @@
 <script lang="ts" src: string ="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha">
 	import LoginForm from './components/LoginForm.svelte'
 	import 'vanilla-hcaptcha';
-	import { loop_guard } from 'svelte/internal';
 	import Hcap from "./components/Hcap.svelte"
 
 	let color: string = 'blue'
