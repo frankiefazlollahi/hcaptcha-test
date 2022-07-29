@@ -10,7 +10,8 @@
             host="https://hcaptcha-test.herokuapp.com/"
             size="normal"
             theme="dark"
-            tabindex="0"></h-captcha>
+            tabindex="0">
+    </h-captcha>
 
     <button onclick="executeHCaptcha()">EXECUTE</button>
     <button onclick="resetHCaptcha()">RESET</button>
