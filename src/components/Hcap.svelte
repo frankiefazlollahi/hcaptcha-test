@@ -12,9 +12,12 @@
             theme="dark"
             tabindex="0"></h-captcha>
 
+    <button onclick="executeHCaptcha()">EXECUTE</button>
+    <button onclick="resetHCaptcha()">RESET</button>
+
     <script>
         const signupCaptcha = document.getElementById('signupCaptcha');
-        
+
         signupCaptcha.addEventListener('loaded', () => {
             console.log('hCaptcha Component Loaded');
             // Safe to call `execute` once component is loaded
@@ -29,18 +32,13 @@
         signupCaptcha.addEventListener('error', (e) => {
             console.log('error event', { error: e.error });
         });
-        
+
         function executeHCaptcha() {
             signupCaptcha.execute();
         }
-        
+
         function resetHCaptcha() {
             signupCaptcha.reset();
         }
     </script>
-
-    <button onclick="executeHCaptcha()">EXECUTE</button>
-    <button onclick="resetHCaptcha()">RESET</button>
-
-    
 </body>
