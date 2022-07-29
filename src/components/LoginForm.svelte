@@ -4,12 +4,12 @@
 
 <form>
     <div>
-        <label>Username</label>
+        <label for='id'>Username</label>
         <input type="text" name="userName" placeholder="Enter username">
     </div>
     
     <div>
-        <label>Password</label>
+        <label for='id'>Password</label>
         <input type="text" name="passWord" placeholder="Enter password"> 
     </div>
 </form>
