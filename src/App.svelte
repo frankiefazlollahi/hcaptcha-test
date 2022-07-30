@@ -8,7 +8,7 @@
 	const toggle = () => {
 		color = (color === 'blue') ? 'red' : 'blue';
 	}
-	
+	//in package.json --no-clear for local, --host instead for website
 </script>
 
 <main>

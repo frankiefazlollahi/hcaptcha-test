@@ -1,7 +1,3 @@
-<script>
-
-</script>
-
 <form>
     <div>
         <label for='id'>Username</label>
