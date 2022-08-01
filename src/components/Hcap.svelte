@@ -1,4 +1,4 @@
-<script>
+<script src="https://js.hcaptcha.com/1/api.js" async defer>
     const signupCaptcha = document.getElementById('signupCaptcha');
 
     signupCaptcha.addEventListener('loaded', () => {
@@ -30,7 +30,7 @@
 </script>
 
 <body>
-
+    
     <div>Open the console!</div>
 
     <!--    <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha" async defer></script>-->
