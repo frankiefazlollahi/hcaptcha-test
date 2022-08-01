@@ -44,8 +44,9 @@
             tabindex="0">
     </h-captcha>
 
+    <button onclick={test}>test</button>
     <button onclick={executeHCaptcha}>EXECUTE</button>
     <button onclick={resetHCaptcha}>RESET</button>
-    <button onclick={test}>test</button>
+    
     
 </body>
