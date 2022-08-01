@@ -23,6 +23,10 @@
     const resetHCaptcha = () => {
         signupCaptcha.reset();
     }
+
+    const test = () => {
+        console.log("button works");
+    }
 </script>
 
 <body>
@@ -42,6 +46,6 @@
 
     <button onclick={executeHCaptcha}>EXECUTE</button>
     <button onclick={resetHCaptcha}>RESET</button>
-
+    <button onclick={test}>test</button>
     
 </body>
