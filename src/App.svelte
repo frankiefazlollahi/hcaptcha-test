@@ -1,4 +1,4 @@
-<script lang="ts">
+<script lang="ts" src: string ="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha">
 	import LoginForm from './components/LoginForm.svelte'
 	import 'vanilla-hcaptcha';
 	import Hcap from "./components/Hcap.svelte"
@@ -21,7 +21,9 @@
 	<h1 style="color: {color}">Login Test Page</h1>
 	<LoginForm />
 	<button on:click={toggle}>Login</button>
+	
 	<Hcap />
+
 
 </main>
 
