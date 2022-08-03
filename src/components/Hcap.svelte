@@ -1,34 +1,3 @@
-<script src="https://js.hcaptcha.com/1/api.js" async defer>
-    const signupCaptcha = document.getElementById('signupCaptcha');
-
-    signupCaptcha.addEventListener('loaded', () => {
-        console.log('hCaptcha Component Loaded');
-        // Safe to call `execute` once component is loaded
-        // signupCaptcha.execute();
-    });
-    signupCaptcha.addEventListener('verified', (e) => {
-        console.log('verified event', { token: e.token, eKey: e.eKey });
-    });
-    signupCaptcha.addEventListener('expired', () => {
-        console.log('expired event');
-    });
-    signupCaptcha.addEventListener('error', (e) => {
-        console.log('error event', { error: e.error });
-    });
-
-    const executeHCaptcha = () => {
-        signupCaptcha.execute();
-    }
-
-    const resetHCaptcha = () => {
-        signupCaptcha.reset();
-    }
-
-    const test = () => {
-        console.log("button works");
-    }
-</script>
-
 <body>
     
     <div>Open the console!</div>
@@ -44,9 +13,33 @@
             tabindex="0">
     </h-captcha>
 
-    <button onclick={test}>test</button>
     <button onclick={executeHCaptcha}>EXECUTE</button>
     <button onclick={resetHCaptcha}>RESET</button>
     
+    <script src="https://js.hcaptcha.com/1/api.js" async defer>
+        const signupCaptcha = document.getElementById('signupCaptcha');
     
+        signupCaptcha.addEventListener('loaded', () => {
+            console.log('hCaptcha Component Loaded');
+            // Safe to call `execute` once component is loaded
+            // signupCaptcha.execute();
+        });
+        signupCaptcha.addEventListener('verified', (e) => {
+            console.log('verified event', { token: e.token, eKey: e.eKey });
+        });
+        signupCaptcha.addEventListener('expired', () => {
+            console.log('expired event');
+        });
+        signupCaptcha.addEventListener('error', (e) => {
+            console.log('error event', { error: e.error });
+        });
+    
+        const executeHCaptcha = () => {
+            signupCaptcha.execute();
+        }
+    
+        const resetHCaptcha = () => {
+            signupCaptcha.reset();
+        }
+    </script>
 </body>
