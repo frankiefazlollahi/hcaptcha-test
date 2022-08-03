@@ -21,9 +21,7 @@
 	<h1 style="color: {color}">Login Test Page</h1>
 	<LoginForm />
 	<button on:click={toggle}>Login</button>
-	
 	<Hcap />
-
 
 </main>
 

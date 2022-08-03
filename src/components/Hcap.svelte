@@ -1,22 +1,21 @@
 <body>
-    
-    <div>Open the console!</div>
 
+    <div>Open the console!</div>
+    
     <!--    <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha" async defer></script>-->
     <script src="/node_modules/vanilla-hcaptcha/dist/index.min.js"></script>
-
-    <h-captcha id="signupCaptcha"
-            site-key="ce694ef0-dbaa-4334-a531-0ad28fabb361"
-            host="new-hcaptcha-test.herokuapp.com"
-            size="normal"
-            theme="dark"
-            tabindex="0">
-    </h-captcha>
-
-    <button onclick={executeHCaptcha}>EXECUTE</button>
-    <button onclick={resetHCaptcha}>RESET</button>
     
-    <script src="https://js.hcaptcha.com/1/api.js" async defer>
+    <h-captcha id="signupCaptcha"
+               site-key="ce694ef0-dbaa-4334-a531-0ad28fabb361"
+               host="https://new-hcaptcha-test.herokuapp.com/"
+               size="normal"
+               theme="dark"
+               tabindex="0"></h-captcha>
+    
+    <button onclick="executeHCaptcha()">EXECUTE</button>
+    <button onclick="resetHCaptcha()">RESET</button>
+    
+    <script>
         const signupCaptcha = document.getElementById('signupCaptcha');
     
         signupCaptcha.addEventListener('loaded', () => {
@@ -34,12 +33,12 @@
             console.log('error event', { error: e.error });
         });
     
-        const executeHCaptcha = () => {
+        function executeHCaptcha() {
             signupCaptcha.execute();
         }
     
-        const resetHCaptcha = () => {
+        function resetHCaptcha() {
             signupCaptcha.reset();
         }
     </script>
-</body>
+    </body>
