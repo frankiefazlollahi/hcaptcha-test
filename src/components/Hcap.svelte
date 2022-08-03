@@ -12,8 +12,8 @@
                theme="dark"
                tabindex="0"></h-captcha>
     
-    <button onclick="executeHCaptcha()">EXECUTE</button>
-    <button onclick="resetHCaptcha()">RESET</button>
+    <button on:click={executeHCaptcha}>EXECUTE</button>
+    <button on:click={resetHCaptcha}>RESET</button>
     
     <script>
         const signupCaptcha = document.getElementById('signupCaptcha');
