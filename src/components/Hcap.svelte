@@ -16,11 +16,11 @@
         console.log('error event', { error: e.error });
     });
 
-    const executeHCaptcha() {
+    const executeHCaptcha = () => {
         signupCaptcha.execute();
     }
 
-    const resetHCaptcha() {
+    const resetHCaptcha = () => {
         signupCaptcha.reset();
     }
 </script>
