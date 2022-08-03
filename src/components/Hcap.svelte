@@ -3,7 +3,8 @@
     <div>Open the console!</div>
     
     <!--    <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha" async defer></script>-->
-    <script src="/node_modules/vanilla-hcaptcha/dist/index.min.js"></script>
+    <!--    <script src="/node_modules/vanilla-hcaptcha/dist/index.min.js"></script>-->
+    <script src="https://cdn.jsdelivr.net/npm/vanilla-hcaptcha"></script>
     
     <h-captcha id="signupCaptcha"
                site-key="ce694ef0-dbaa-4334-a531-0ad28fabb361"
