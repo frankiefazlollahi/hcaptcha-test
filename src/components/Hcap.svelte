@@ -7,7 +7,6 @@
     
     <h-captcha id="signupCaptcha"
                site-key="ce694ef0-dbaa-4334-a531-0ad28fabb361"
-               host="https://hcaptcha-heroku.herokuapp.com"
                size="normal"
                theme="dark"
                tabindex="0"></h-captcha>
